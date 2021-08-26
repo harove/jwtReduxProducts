@@ -11,8 +11,8 @@ export function substraction(a, b){
 export function ordenar(arr){
     return arr.sort((elemA,elemB)=>{
         if(elemA>elemB)
-            return 1
-        else return -1     
+            return -1
+        else return 1     
     })
 }
 
