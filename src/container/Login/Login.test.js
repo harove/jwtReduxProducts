@@ -24,7 +24,7 @@ describe("Login", () => {
   test("render login component, its fields and buttons", () => {
     expect(wrapper.find(Login)).toBeDefined();
 
-    const emailField = wrapper.find("#email");
+    const emailField = wrapper.find(".email");
     const emailValue = emailField.get(0).props.value;
     expect(emailValue).toEqual("");
 

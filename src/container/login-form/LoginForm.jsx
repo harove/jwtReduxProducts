@@ -28,11 +28,9 @@ export const LoginForm = ({ isLoading }) => {
   return (
     <form noValidate autoComplete="off" onSubmit={handleSubmit}>
       <div className="card">
-        
         <input
-          id="email"
           name="email"
-          className="form-control"
+          className="form-control email"
           placeholder="Email"
           onChange={handleInputChange}
           value={form.email}
