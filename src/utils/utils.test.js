@@ -5,7 +5,7 @@ const data = ['Jose','Maria','Adriana']
 
 describe("utils.js", () => {
   test("specialSum", () => {
-    expect(specialSum(2, 5)).toEqual(7);
+    expect(specialSum(2, 5)).
   });
 
 //   test("substraction", () => {
