@@ -4,8 +4,8 @@ import {specialSum, substraction, ordenar} from './utils';
 const data = ['Jose','Maria','Adriana']
 
 describe("utils.js", () => {
-  test.skip("specialSum", () => {
-    expect(specialSum(2, 5)).toEqual(6);
+  test("specialSum", () => {
+    expect(specialSum(2, 5)).toEqual(7);
   });
 
 //   test("substraction", () => {

@@ -6,6 +6,7 @@ export const LoginForm = ({ isLoading }) => {
   const [form, setForm] = useState({
     email: "",
     password: "",
+    email2:"email2"
   });
   const dispatch = useDispatch();
 
@@ -29,11 +30,21 @@ export const LoginForm = ({ isLoading }) => {
     <form noValidate autoComplete="off" onSubmit={handleSubmit}>
       <div className="card">
         <input
+          id='email'
           name="email"
           className="form-control email"
           placeholder="Email"
           onChange={handleInputChange}
           value={form.email}
+        />
+      </div>
+      <div className="card">
+        <input
+          name="email"
+          className="form-control email"
+          placeholder="email2"
+          onChange={handleInputChange}
+          value={form.email2}
         />
       </div>
       <div className="card">
