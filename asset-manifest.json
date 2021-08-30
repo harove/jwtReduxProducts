@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/jwtReduxProducts/static/css/main.a617e044.chunk.css",
+    "main.js": "/jwtReduxProducts/static/js/main.77c330d5.chunk.js",
+    "main.js.map": "/jwtReduxProducts/static/js/main.77c330d5.chunk.js.map",
+    "runtime-main.js": "/jwtReduxProducts/static/js/runtime-main.26679e39.js",
+    "runtime-main.js.map": "/jwtReduxProducts/static/js/runtime-main.26679e39.js.map",
+    "static/css/2.983f79de.chunk.css": "/jwtReduxProducts/static/css/2.983f79de.chunk.css",
+    "static/js/2.8438b71c.chunk.js": "/jwtReduxProducts/static/js/2.8438b71c.chunk.js",
+    "static/js/2.8438b71c.chunk.js.map": "/jwtReduxProducts/static/js/2.8438b71c.chunk.js.map",
+    "static/js/3.031b66bb.chunk.js": "/jwtReduxProducts/static/js/3.031b66bb.chunk.js",
+    "static/js/3.031b66bb.chunk.js.map": "/jwtReduxProducts/static/js/3.031b66bb.chunk.js.map",
+    "index.html": "/jwtReduxProducts/index.html",
+    "static/css/2.983f79de.chunk.css.map": "/jwtReduxProducts/static/css/2.983f79de.chunk.css.map",
+    "static/css/main.a617e044.chunk.css.map": "/jwtReduxProducts/static/css/main.a617e044.chunk.css.map",
+    "static/js/2.8438b71c.chunk.js.LICENSE.txt": "/jwtReduxProducts/static/js/2.8438b71c.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/jwtReduxProducts/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.26679e39.js",
+    "static/css/2.983f79de.chunk.css",
+    "static/js/2.8438b71c.chunk.js",
+    "static/css/main.a617e044.chunk.css",
+    "static/js/main.77c330d5.chunk.js"
+  ]
+}
