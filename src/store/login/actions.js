@@ -12,31 +12,31 @@ export const userLogin = ({ email, password }) => {
     };
 
     try {
-      fetch("http://localhost:4000/auth/login", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          username: "claudio.rojas",
-          password: "123.123",
-        }),
-        // fetch("https://reqres.in/api/login", {
-        //   method: "POST",
-        //   headers: {
-        //     "Content-Type": "application/json",
-        //   },
-        //   body: JSON.stringify({
-        //     email,
-        //     password,
-        //   }),
+      // fetch("http://localhost:4000/auth/login", {
+      //   method: "POST",
+      //   headers: {
+      //     "Content-Type": "application/json",
+      //   },
+      //   body: JSON.stringify({
+      //     username: "alex",
+      //     password: "123",
+      //   }),
+        fetch("https://reqres.in/api/login", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            email,
+            password,
+          }),
       })
         .then((response) => {
           return response.json();
         })
         .then((data) => {
-          if (data.jwt) {
-            localStorage.token = data.jwt;
+          if (data.token) {
+            localStorage.token = data.token;
             loginSuccess(email);
           } else loginFail(data.error);
         });
