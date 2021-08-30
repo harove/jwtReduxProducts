@@ -2,10 +2,11 @@ import {specialSum, substraction, ordenar} from './utils';
 
 
 const data = ['Jose','Maria','Adriana']
+const mockFn = jest.fn()
 
 describe("utils.js", () => {
   test("specialSum", () => {
-    expect(specialSum(2, 5)).
+    expect(specialSum(2, 5)).toEqual(7)
   });
 
 //   test("substraction", () => {

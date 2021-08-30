@@ -10,25 +10,36 @@ export const userLogin = ({ email, password }) => {
     const loginFail = (error) => {
       dispatch({ type: LOGIN_USER_ERROR, payload: error });
     };
-    
+
     try {
-      fetch("https://reqres.in/api/login", {
+      fetch("http://localhost:4000/auth/login", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          email,
-          password,
+          username: "claudio.rojas",
+          password: "123.123",
         }),
-      }).then((response)=>{
-        return response.json()
-      }).then((data)=>{
-        if (data.token)
-          loginSuccess(email);
-        else
-          loginFail(data.error);
+        // fetch("https://reqres.in/api/login", {
+        //   method: "POST",
+        //   headers: {
+        //     "Content-Type": "application/json",
+        //   },
+        //   body: JSON.stringify({
+        //     email,
+        //     password,
+        //   }),
       })
+        .then((response) => {
+          return response.json();
+        })
+        .then((data) => {
+          if (data.jwt) {
+            localStorage.token = data.jwt;
+            loginSuccess(email);
+          } else loginFail(data.error);
+        });
     } catch (error) {
       loginFail(error);
     }
