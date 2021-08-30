@@ -5,7 +5,7 @@ import { userLogin } from "../../store/login/actions";
 export const LoginForm = ({ isLoading }) => {
 
   const [form, setForm] = useState({
-    email: "",
+    username: "",
     password: "",
     email2:"email2"
   });
@@ -31,18 +31,18 @@ export const LoginForm = ({ isLoading }) => {
     <form noValidate autoComplete="off" onSubmit={handleSubmit}>
       <div className="card">
         <input
-          id='email'
-          name="email"
+          id='username'
+          name="username"
           className="form-control email"
-          placeholder="Email"
+          placeholder="username"
           onChange={handleInputChange}
-          value={form.email}
+          value={form.username}
         />
       </div>
       <div className="card">
         <input
           name="email"
-          className="form-control email"
+          className="form-control email d-none"
           placeholder="email2"
           onChange={handleInputChange}
           value={form.email2}

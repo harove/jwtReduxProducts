@@ -1,8 +1,5 @@
 const LOGIN_USER = 'LOGIN_USER';
 const USERS_LIST = 'USERS_LIST';
-export const LOGIN_USER_INIT = `${LOGIN_USER}_INIT`;
-export const LOGIN_USER_SUCCESS = `${LOGIN_USER}_SUCCESS`;
-export const LOGIN_USER_ERROR = `${LOGIN_USER}_ERROR`;
 export const USERS_LIST_INIT = `${USERS_LIST}_INIT`;
 export const USERS_LIST_SUCCESS = `${USERS_LIST}_SUCCESS`;
 export const USERS_LIST_ERROR = `${USERS_LIST}_ERROR`;
